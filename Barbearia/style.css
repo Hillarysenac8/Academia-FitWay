@@ -26,7 +26,7 @@ i {
 
 .header-icons a:hover i {
   animation: translateY 0.8s infinite alternate;
-  color: #d34040;
+  color: #1900f5;
 }
 
 @keyframes translateY {
@@ -70,8 +70,9 @@ i {
     font-size: 34px;
   }
   .header-logo img {
-    width: 300px;
+    width: 200px;
     margin-top: 46px;
+    
   }
   .header-button {
     display: none;
@@ -126,7 +127,7 @@ i {
 .button-contact {
   padding: 14px 28px;
   color: #FFF;
-  background-color: #f38406;
+  background-color: #1900f5;
   border: 0;
   font-size: 18px;
   font-weight: 600;
@@ -288,6 +289,9 @@ i {
   gap: 24px;
   color: #FFF;
 }
+footer img{
+    width: 250px;
+}
 
 .footer-icons {
   display: flex;
@@ -361,3 +365,129 @@ a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.planos{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card{
+    width: 320px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+
+    border: 2px solid #ddd;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    border-color: #8eb5ff;
+}
+
+.card h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.card p{
+    color: #666;
+    line-height: 25px;
+}
+
+.card h3{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #111;
+}
+
+.card h3 span{
+    font-size: 18px;
+    color: #666;
+}
+
+.info{
+    margin-top: 25px;
+}
+
+.info p{
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #1900f5;
+    color: rgb(255, 255, 255);
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #1900f5;
+}
+
+.destaque{
+    background: #000000;
+    color: white;
+    border: 2px solid #1900f5;
+}
+
+.destaque h2,
+.destaque h3,
+.destaque p,
+.destaque span{
+    color: white;
+}
+
+.tag{
+    position: absolute;
+
+    top: -15px;
+    left: 20px;
+
+    background: #1900f5;
+    color: black;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
